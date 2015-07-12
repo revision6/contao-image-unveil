@@ -12,13 +12,23 @@
  * @license    LGPL.
  * @filesource
  */
+
+namespace Revision6\ImageUnveil\Frontend;
+
 class HookHandler
 {
 
     public function outputFrontendTemplate($content, $template)
     {
+        if (false !== strpos($content, 'img')) {
+            return $content;
+        }
 
-        $content = 'TEST';
+        $content = preg_replace(
+            '#<img([^>]+?)src=[\'"]?([^\'"\s>]+)[\'"]?([^>]*)>#',
+            '<img${1}src="${2}" data-src="${2}"${3}><noscript><img${1}src="${2}"${3}></noscript>',
+            $content
+        );
 
         return $content;
     }

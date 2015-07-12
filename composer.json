@@ -1,10 +1,10 @@
 {
-  "name": "revision6/contao-extended-member",
-  "description": "Contao Extended Member",
+  "name": "revision6/contao-image-unveil",
+  "description": "Contao Image Unveil",
   "keywords": [
     "contao",
-    "extended",
-    "member"
+    "image",
+    "unveil"
   ],
   "type": "contao-module",
   "homepage": "https://revision6.de",
@@ -19,14 +19,13 @@
   ],
   "support": {
     "email": "shout@revision6.de",
-    "issues": "https://github.com/revision6/contao-extended-member/issues",
-    "source": "https://github.com/revision6/contao-extended-member"
+    "issues": "https://github.com/revision6/contao-image-unveil/issues",
+    "source": "https://github.com/revision6/contao-image-unveil"
   },
   "require": {
     "php": ">=5.4",
     "contao/core": ">3.4.4,<4.0",
-    "contao-community-alliance/composer-plugin": "~2.0",
-    "backboneit/contao-selectri": ">=2.0.2.0,<2.1-dev"
+    "contao-community-alliance/composer-plugin": "~2.0"
   },
   "require-dev": {
     "cyberspectrum/contao-toolbox": "~0.6",
@@ -45,7 +44,7 @@
   "extra": {
     "contao": {
       "sources": {
-        "contao": "system/modules/extended_member"
+        "contao": "system/modules/image_unveil"
       }
     }
   },

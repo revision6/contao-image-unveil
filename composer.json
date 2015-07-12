@@ -1,0 +1,54 @@
+{
+  "name": "revision6/contao-extended-member",
+  "description": "Contao Extended Member",
+  "keywords": [
+    "contao",
+    "extended",
+    "member"
+  ],
+  "type": "contao-module",
+  "homepage": "https://revision6.de",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Christopher Bölter",
+      "email": "c.boelter@revision6.de",
+      "homepage": "https://revision6.de",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "shout@revision6.de",
+    "issues": "https://github.com/revision6/contao-extended-member/issues",
+    "source": "https://github.com/revision6/contao-extended-member"
+  },
+  "require": {
+    "php": ">=5.4",
+    "contao/core": ">3.4.4,<4.0",
+    "contao-community-alliance/composer-plugin": "~2.0",
+    "backboneit/contao-selectri": ">=2.0.2.0,<2.1-dev"
+  },
+  "require-dev": {
+    "cyberspectrum/contao-toolbox": "~0.6",
+    "phpcq/all-tasks": "~1.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Revision6": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "Revision6\\Test": "tests"
+    }
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "contao": "system/modules/extended_member"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

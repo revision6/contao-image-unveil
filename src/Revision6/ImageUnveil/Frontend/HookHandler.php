@@ -20,7 +20,7 @@ class HookHandler
 
     public function outputFrontendTemplate($content, $template)
     {
-        if (false !== strpos($content, 'img')) {
+        if (!strpos($content, 'img')) {
             return $content;
         }
 

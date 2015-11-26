@@ -1,2 +1,2 @@
 # contao-image-unveil
-Append the unveil data-attribute to image tags.
+https://confluence.swmh.de/display/VMIT/contao-image-unveil
